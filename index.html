@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Number slideshow - simple and practical numbers image slideshow jQuery plugin(preload image and show loading animation)</title>
+<link href="css/number_slideshow.css" rel="stylesheet" type="text/css"></link>
+<style type="text/css">
+h2{
+	color: red;
+}
+pre{
+	padding: 4px;
+	border: #F90 dotted 1px;
+}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/number_slideshow.js"></script>
+</head>
+    <body>
+        <script language="javascript" type="text/javascript">
+            $(function() {
+                $("#number_slideshow").number_slideshow({
+                    slideshow_autoplay: 'enable',//enable disable
+                    slideshow_time_interval: '3000',
+                    slideshow_window_background_color: "#ccc",
+                    slideshow_window_padding: '1',
+                    slideshow_window_width: '550',
+                    slideshow_window_height: '332',
+                    slideshow_border_size: '1',
+                    slideshow_border_color: 'black',
+                    slideshow_show_button: 'enable',//enable disable
+                    slideshow_show_title: 'disable',//enable disable
+                    slideshow_button_text_color: '#CCC',
+                    slideshow_button_background_color: '#333',
+                    slideshow_button_current_background_color: '#666',
+                    slideshow_button_border_color: '#000',
+                    slideshow_loading_gif: 'loading.gif',//loading pic position, you can replace it.
+                    slideshow_button_border_size: '1'
+                });
+
+                $("#number_slideshow1").number_slideshow({
+                    slideshow_autoplay: 'enable',//enable disable
+                    slideshow_time_interval: '5000',
+                    slideshow_window_background_color: "#CCFFCC",
+                    slideshow_window_padding: '0',
+                    slideshow_window_width: '550',
+                    slideshow_window_height: '332',
+                    slideshow_border_size: '0',
+                    slideshow_border_color: '#006600',
+                    slideshow_show_button: 'enable',//enable disable
+                    slideshow_show_title: 'enable',//enable disable
+                    slideshow_button_text_color: '#FFF',
+                    slideshow_button_background_color: '#66CC00',
+                    slideshow_button_current_background_color: '#006600',
+                    slideshow_button_border_color: '#006600',
+                    slideshow_loading_gif: 'loading.gif',//loading pic position, you can replace it use youself gif.
+                    slideshow_button_border_size: '0'
+                });
+
+            });
+        </script>
+		<div id="showmsg">
+			
+		</div>
+		<div id="showmsg1">
+			
+		</div>
+        <h1>Number slideshow - simple and practical numbers image slideshow jQuery plugin</h1>
+<h2>Demo1</h2>
+        <div id="number_slideshow" class="number_slideshow">
+            <ul>
+                <li><a href="#"><img src="http://farm5.static.flickr.com/4127/5038574034_0fd2992492.jpg" width="407" height="301" alt="slideshow1"/></a></li>
+                <li><a href="#"><img src="http://farm5.static.flickr.com/4130/5026804650_f9fcfa8e56.jpg" width="407" height="301" alt="slideshow2"/></a></li>
+                <li><a href="#"><img src="http://farm5.static.flickr.com/4109/5034953549_742bab63e8.jpg" width="407" height="301" alt="slideshow3"/></a></li>
+                <li><a href="#"><img src="http://farm5.static.flickr.com/4146/5037956979_0c66720a18.jpg" width="407" height="301" alt="slideshow4"/></a></li>
+            </ul>
+            <ul class="number_slideshow_nav">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+      <h2>Demo2</h2>
+        <div id="number_slideshow1" class="number_slideshow">
+            <ul>
+                <li><a href="#"><img src="http://farm5.static.flickr.com/4127/5038574034_0fd2992492.jpg" width="407" height="301" alt="slideshow1"/></a></li>
+                <li><a href="#"><img src="http://farm5.static.flickr.com/4130/5026804650_f9fcfa8e56.jpg" width="407" height="301" alt="slideshow2"/></a></li>
+                <li><a href="#"><img src="http://farm5.static.flickr.com/4109/5034953549_742bab63e8.jpg" width="407" height="301" alt="slideshow3"/></a></li>
+                <li><a href="#"><img src="http://farm5.static.flickr.com/4146/5037956979_0c66720a18.jpg" width="407" height="301" alt="slideshow4"/></a></li>
+            </ul>
+            <ul class="number_slideshow_nav">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+        <h2>Usage</h2>
+<h3>Include js and css files.</h3>
+<pre>
+&lt;link href=&quot;css/number_slideshow.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/number_slideshow.js&quot;&gt;&lt;/script&gt;
+</pre>
+<h3>Add html.</h3>
+<pre>
+        &lt;div id=&quot;number_slideshow&quot; class=&quot;number_slideshow&quot;&gt;<br />            &lt;ul&gt;<br />                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/1.jpg&quot; width=&quot;407&quot; height=&quot;301&quot; alt=&quot;slideshow_large&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/2.jpg&quot; width=&quot;407&quot; height=&quot;301&quot; alt=&quot;slideshow_large&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/3.jpg&quot; width=&quot;407&quot; height=&quot;301&quot; alt=&quot;slideshow_large&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/4.jpg&quot; width=&quot;407&quot; height=&quot;301&quot; alt=&quot;slideshow_large&quot;/&gt;&lt;/a&gt;&lt;/li&gt;<br />            &lt;/ul&gt;<br />            &lt;ul class=&quot;number_slideshow_nav&quot;&gt;<br />                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;<br />                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;<br />                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;<br />                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;<br />            &lt;/ul&gt;<br />            &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;<br />        &lt;/div&gt;
+</pre>
+<span style="color:red;">Tips: image alt attribute treated as title show at top of slideshow window.</span>
+<h3>Add startup script.</h3>
+<pre>
+        &lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;<br />            $(function() {<br />                $(&quot;#number_slideshow&quot;).number_slideshow({<br />                    slideshow_autoplay: 'enable',//enable disable<br />                    slideshow_time_interval: '3000',<br />                    slideshow_window_background_color: &quot;#ccc&quot;,<br />                    slideshow_window_padding: '1',<br />                    slideshow_window_width: '600',<br />                    slideshow_window_height: '249',<br />                    slideshow_border_size: '1',<br />                    slideshow_border_color: 'black',<br />                    slideshow_show_button: 'enable',//enable disable<br />                    slideshow_show_title: 'enable',//enable disable<br/>                    slideshow_button_text_color: '#CCC',<br />                    slideshow_button_background_color: '#333',<br />                    slideshow_button_current_background_color: '#666',<br />                    slideshow_button_border_color: '#000',<br />                    slideshow_button_border_size: '1'<br />                });<br />        &lt;/script&gt;
+</pre>
+<pre>
+Copyright 2010 <a href="http://www.htmldrive.net">htmldrive.net</a> Inc.
+
+@projectHomepage: <a href="http://www.htmldrive.net/go/to/number-slideshow">http://www.htmldrive.net/go/to/number-slideshow</a>
+
+@projectDescription: Number slideshow - simple and practical numbers image slideshow jQuery plugin.
+
+@author: <a href="http://www.htmldrive.net">htmldrive.net</a>
+
+More script and css style : <a href="http://www.htmldrive.net">htmldrive.net</a>
+
+@version 2.2 , update: Preload image and show loading animation.
+
+@license http://www.apache.org/licenses/LICENSE-2.0
+    </pre>
+</body>
+</html>
