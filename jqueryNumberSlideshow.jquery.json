@@ -1,7 +1,7 @@
 {
-    "name": "jquery-number-slideshow.jquery",
-    "version": "2.3",
-    "title": "jNumber slideshow",
+    "name": "jqueryNumberSlideshow",
+    "version": "2.3.0",
+    "title": "Number slideshow",
     "author": {
         "name": "Htmldrive.net",
         "url": "http://www.htmldrive.net"
