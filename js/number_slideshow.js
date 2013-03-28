@@ -1,9 +1,8 @@
-// Copyright 2010 htmldrive.net Inc.
+// Copyright 2013 htmldrive.net Inc.
 /**
- * @projectHomepage: http://www.htmldrive.net/go/to/number-slideshow
- * @projectDescription: Number slideshow - simple and practical numbers image slideshow jQuery plugin.
+ * @project homepage: http://www.htmldrive.net/go/to/number-slideshow
+ * @project hescription: Number slideshow - simple and practical numbers image slideshow jQuery plugin.
  * @author htmldrive.net
- * @version 2.2, update: preload image and show loading animation.
  * @license http://www.apache.org/licenses/LICENSE-2.0
  * More script and css style : htmldrive.net
  */
@@ -12,6 +11,8 @@
         var p=p||{};
         var n=p&&p.slideshow_autoplay?p.slideshow_autoplay:"enable";
         var o=p&&p.slideshow_time_interval?p.slideshow_time_interval:"5000";
+        var transition_speed=p&&p.slideshow_transition_speed?p.slideshow_transition_speed:"normal";
+        var button_current_text_color=p&&p.slideshow_button_current_text_color?p.slideshow_button_current_text_color:"#000";
         var q=p&&p.slideshow_window_background_color?p.slideshow_window_background_color:"white";
         var r=p&&p.slideshow_window_padding?p.slideshow_window_padding:"5";
         var s=p&&p.slideshow_window_width?p.slideshow_window_width:"400";
@@ -78,10 +79,13 @@
                 if(E >= G){
                     E = 0;
                 }
-                F.find("ul:first").children("li").fadeOut();
-                F.find("ul:first").children("li").eq(E).fadeIn();
+                var speed = transition_speed;
+                F.find("ul:first").children("li").fadeOut(speed);
+                F.find("ul:first").children("li").eq(E).fadeIn(transition_speed);
                 F.find(".number_slideshow_nav").children("li").css("background-color",z);
+                F.find(".number_slideshow_nav").children("li").children("a").css("color",x);
                 F.find(".number_slideshow_nav").children("li").eq(E).css("background-color",A);
+                F.find(".number_slideshow_nav").children("li").eq(E).children("a").css("color",button_current_text_color);
                 E++;
                 if(E>=G){
                     E=0
@@ -96,11 +100,6 @@
             var b=a.parent().children().index(a);
             if(b != (E-1)){
                 E=b+1;
-                /*
-                if(E>=G){
-                    E=0
-                }
-                */
                 F.find("ul:first").children("li").fadeOut();
                 F.find("ul:first").children("li").eq(b).fadeIn();
                 F.find(".number_slideshow_nav").children("li").css("background-color",z);
