@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jquery-number-slideshow : Simple and practical numbers image slideshow jQuery plugin" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jquery-number-slideshow</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/htmldrive/jquery-number-slideshow">View on GitHub</a>
+
+          <h1 id="project_title">Jquery-number-slideshow</h1>
+          <h2 id="project_tagline">Simple and practical numbers image slideshow jQuery plugin</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/htmldrive/jquery-number-slideshow/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/htmldrive/jquery-number-slideshow/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>jquery-number-slideshow</h1>
+
+<p>Simple and practical numbers image slideshow jQuery plugin</p>
+
+<p><a href="http://www.htmldrive.net/items/demo/570/Number-slideshow-simple-and-practical-numbers-image-slideshow-jQuery-plugin" title="Number slideshow - simple and practical numbers image slideshow jQuery plugin">Demo</a></p>
+
+<h2>Usage</h2>
+
+<p><strong>Include js and css files.</strong></p>
+
+<pre><code>&lt;link href="css/number_slideshow.css" rel="stylesheet" type="text/css" /&gt;  
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"&gt;&lt;/script 
+&lt;script src="js/number_slideshow.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p><em>Tips: image alt attribute treated as title show at top of slideshow window.</em></p>
+
+<p><strong>Add html.</strong></p>
+
+<pre><code>    &lt;div id="number_slideshow" class="number_slideshow"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/1.jpg" width="407" height="301" alt="slideshow_large"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/2.jpg" width="407" height="301" alt="slideshow_large"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/3.jpg" width="407" height="301" alt="slideshow_large"/&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/4.jpg" width="407" height="301" alt="slideshow_large"/&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="number_slideshow_nav"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="clear: both"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+
+<p><strong>Add startup script.</strong></p>
+
+<pre><code>    &lt;script language="javascript" type="text/javascript"&gt;
+        $(function() {
+            $("#number_slideshow").number_slideshow({
+                slideshow_autoplay: 'enable',//enable disable
+                slideshow_time_interval: 3000,
+                slideshow_window_background_color: "#fff",
+                slideshow_window_padding: '1',
+                slideshow_window_width: '550',
+                slideshow_window_height: '332',
+                slideshow_border_size: '1',
+                slideshow_transition_speed: 500, //'normal','slow','fast' or numeral
+                slideshow_border_color: 'black',
+                slideshow_show_button: 'enable',//enable disable
+                slideshow_show_title: 'disable',//enable disable
+                slideshow_button_text_color: '#CCC',
+                slideshow_button_current_text_color: '#000',
+                slideshow_button_background_color: '#333',
+                slideshow_button_current_background_color: '#666',
+                slideshow_button_border_color: '#000',
+                slideshow_loading_gif: 'loading.gif',//loading pic, you can replace it.
+                slideshow_button_border_size: '1'
+            });
+        });
+    &lt;/script&gt;
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery-number-slideshow maintained by <a href="https://github.com/htmldrive">htmldrive</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
