@@ -15,7 +15,7 @@
     "dependencies": {
         "jquery": ">=1.6.1"
     },
-    "description": "simple and practical numbers image slideshow jQuery plugin.",
+    "description": "Simple and practical numbers image slideshow jQuery plugin.",
     "keywords": [
         "slideshow",
         "slider",
