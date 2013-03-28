@@ -1,0 +1,27 @@
+{
+    "name": "jquery-number-slideshow.jquery",
+    "version": "2.3",
+    "title": "jNumber slideshow",
+    "author": {
+        "name": "Htmldrive.net",
+        "url": "http://www.htmldrive.net"
+    },
+    "licenses": [
+        {
+            "type": "apache",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.6.1"
+    },
+    "description": "simple and practical numbers image slideshow jQuery plugin.",
+    "keywords": [
+        "slideshow",
+        "slider",
+        "rotator"
+    ],
+    "homepage": "http://htmldrive.github.com/jquery-number-slideshow",
+    "download": "https://github.com/htmldrive/jquery-number-slideshow",
+    "bugs": "https://github.com/htmldrive/jquery-number-slideshow/issues"
+}
