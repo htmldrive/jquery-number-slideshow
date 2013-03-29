@@ -21,6 +21,7 @@
         "slider",
         "animation",
         "ui",
+        "image",
         "rotator"
     ],
     "homepage": "http://htmldrive.github.com/jquery-number-slideshow",
