@@ -3,7 +3,10 @@ jquery-number-slideshow
 
 Simple and practical numbers image slideshow jQuery plugin
 
-[Demo](http://www.htmldrive.net/items/demo/570/Number-slideshow-simple-and-practical-numbers-image-slideshow-jQuery-plugin "Number slideshow - simple and practical numbers image slideshow jQuery plugin")
+[![Number slideshow - simple and practical numbers image slideshow jQuery plugin](http://www.htmldrive.net/media/2013/3/30/1364708830.png "Number slideshow - simple and practical numbers image slideshow jQuery plugin")](http://www.htmldrive.net/items/demo/570/Number-slideshow-simple-and-practical-numbers-image-slideshow-jQuery-plugin "Number slideshow - simple and practical numbers image slideshow jQuery plugin")
+
+[**Demo**](http://www.htmldrive.net/items/demo/570/Number-slideshow-simple-and-practical-numbers-image-slideshow-jQuery-plugin "Number slideshow - simple and practical numbers image slideshow jQuery plugin")
+
 ##Usage
 **Include js and css files.**
 
